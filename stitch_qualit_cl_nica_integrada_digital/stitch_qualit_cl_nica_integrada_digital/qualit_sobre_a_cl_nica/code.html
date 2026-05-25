@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sobre a Clínica - Qualité Clínica Integrada</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#5f567e",
+                        "surface-container": "#edeef0",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#eedbff",
+                        "background": "#f9f9fb",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1d",
+                        "surface": "#f9f9fb",
+                        "on-surface-variant": "#4a454e",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "primary-fixed-dim": "#d8bafa",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#241a00",
+                        "secondary-fixed-dim": "#ccc0ee",
+                        "on-surface": "#1a1c1d",
+                        "surface-container-low": "#f3f3f5",
+                        "secondary-container": "#dacefd",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-variant": "#e2e2e4",
+                        "on-secondary-fixed": "#1e1539",
+                        "surface-container-high": "#e8e8ea",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d9dadc",
+                        "secondary-fixed": "#e7deff",
+                        "on-secondary-fixed-variant": "#4a4168",
+                        "secondary": "#625981",
+                        "on-tertiary-container": "#4e3d00",
+                        "inverse-primary": "#d8bafa",
+                        "outline": "#7b757f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-primary-fixed": "#260e43",
+                        "primary-container": "#8369a3",
+                        "surface-container-highest": "#e2e2e4",
+                        "tertiary-container": "#cca72f",
+                        "on-primary-fixed-variant": "#543b71",
+                        "primary": "#6a5188",
+                        "surface-bright": "#f9f9fb",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#6c538b",
+                        "inverse-on-surface": "#f0f0f2",
+                        "tertiary": "#735c00",
+                        "outline-variant": "#ccc4cf",
+                        "inverse-surface": "#2f3132"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "base": "8px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Quicksand"],
+                        "display-lg-mobile": ["Quicksand"],
+                        "headline-sm": ["Quicksand"],
+                        "title-lg": ["Be Vietnam Pro"],
+                        "caption": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm shadow-primary/5 transition-all duration-300" id="global-nav">
+<div class="w-full flex justify-between items-center px-8 md:px-xl py-4 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight" href="#">
+                Qualité
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">
+                    Home
+                </a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold hover:text-primary transition-colors duration-300" href="#">
+                    Sobre
+                </a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">
+                    Profissionais
+                </a>
+</nav>
+<!-- Trailing Primary Action -->
+<button class="hidden md:flex items-center justify-center bg-primary hover:bg-surface-tint text-on-primary px-6 py-3 rounded-full font-label-md text-label-md transition-all duration-300 shadow-sm shadow-primary/10 hover:shadow-md hover:shadow-primary/20 scale-95 active:scale-90">
+<span class="material-symbols-outlined mr-2 text-[20px]">calendar_month</span>
+                Agendar WhatsApp
+            </button>
+<!-- Mobile Menu Toggle (Decorative for this scope) -->
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[100px]">
+<!-- Hero Banner Section -->
+<section class="relative px-4 md:px-xl py-xl md:py-[120px] max-w-container-max mx-auto flex flex-col items-center text-center overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/30 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6 max-w-3xl">
+                Nossa História
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                Um espaço dedicado ao acolhimento e à excelência clínica, onde a sua jornada de saúde integral é guiada com serenidade e profissionalismo.
+            </p>
+</section>
+<!-- Institutional Text Section (Asymmetric Layout) -->
+<section class="px-4 md:px-xl py-lg max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-5 relative group">
+<div class="absolute inset-0 bg-secondary-fixed/50 rounded-xl transform translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6 duration-500"></div>
+<img alt="Uma sala de espera de clínica moderna e minimalista. A iluminação é suave e natural, criando uma atmosfera serena e acolhedora. Móveis de design limpo em tons claros contrastam sutilmente com plantas de interior verdes. A paleta de cores foca em tons pasteis, brancos e lavanda, transmitindo paz mental e profissionalismo." class="w-full h-auto rounded-xl shadow-sm shadow-primary/5 object-cover aspect-[4/5]" data-alt="Uma sala de espera de clínica moderna e minimalista. A iluminação é suave e natural, criando uma atmosfera serena e acolhedora. Móveis de design limpo em tons claros contrastam sutilmente com plantas de interior verdes. A paleta de cores foca em tons pasteis, brancos e lavanda, transmitindo paz mental e profissionalismo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA64G0fAe_7ltnctIY_8OzRARc-miWNAGstpM1S86HOR2Of4sexY7NubWXwv7zOsCROLL9HeXeabIFQQ7knsz6DYQZ1zc47fpCCRI_AdTAAbNQXSFKB6PWws0WflgqBV_-2rmsWurFBMod23r8sWXMGGKpHMxGKdF3XzCmh2PGVun493CjTbhMQdgZrABs2MuC7Zp08gxQS_htDq2Kvwsshdhny_SlBQAXQ_n36w8GdyfsWuXrVqbaAef2eehPVQ_3-3sIgaDCCg3eu"/>
+</div>
+<div class="md:col-span-7 flex flex-col gap-8 md:pl-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-4">Filosofia de Cuidado</h2>
+<div class="w-16 h-1 bg-tertiary-container rounded-full mb-6"></div>
+</div>
+<div class="prose prose-lg text-on-surface-variant font-body-md text-body-md space-y-6">
+<p>
+                            A Qualité Clínica Integrada nasceu do desejo de transformar a experiência de cuidado à saúde em Igarapava. Acreditamos que o tratamento eficaz não se limita à mitigação de sintomas, mas exige um olhar profundo e empático para o indivíduo como um todo.
+                        </p>
+<p>
+                            Nossa abordagem, pautada na "Serenidade Guiada", busca oferecer um refúgio seguro onde a excelência clínica encontra o conforto humano. Afastamo-nos do ambiente hospitalar tradicional e frio, optando por um design de espaço e de serviço que promove o relaxamento imediato e a clareza mental desde o primeiro contato.
+                        </p>
+<p>
+                            Reunimos uma equipe multidisciplinar de especialistas dedicados, unidos pelo compromisso de oferecer um acompanhamento personalizado, ético e embasado nas práticas mais modernas da saúde integrativa.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission, Vision, Values (Bento Cards) -->
+<section class="px-4 md:px-xl py-xl max-w-container-max mx-auto bg-surface-container-lowest relative rounded-3xl my-lg border border-surface-variant/30">
+<div class="text-center mb-xl">
+<h2 class="font-headline-md text-headline-md text-on-background mb-4">Nossos Pilares</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    Os fundamentos que guiam cada interação, diagnóstico e plano de tratamento em nossa clínica.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Mission Card -->
+<div class="bg-surface rounded-xl p-8 shadow-[0_10px_30px_rgba(150,123,182,0.05)] hover:shadow-[0_15px_40px_rgba(150,123,182,0.08)] transition-all duration-300 border-l-4 border-tertiary-container group">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">explore</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-background mb-4">Missão</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Proporcionar um cuidado integrativo e humanizado, promovendo a saúde física e mental através de tratamentos de excelência em um ambiente acolhedor e seguro.
+                    </p>
+</div>
+<!-- Vision Card -->
+<div class="bg-surface rounded-xl p-8 shadow-[0_10px_30px_rgba(150,123,182,0.05)] hover:shadow-[0_15px_40px_rgba(150,123,182,0.08)] transition-all duration-300 border-l-4 border-tertiary-container group">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-background mb-4">Visão</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Ser a clínica de referência em Igarapava e região para saúde integral, reconhecida pela inovação clínica, empatia profunda e resultados transformadores.
+                    </p>
+</div>
+<!-- Values Card -->
+<div class="bg-surface rounded-xl p-8 shadow-[0_10px_30px_rgba(150,123,182,0.05)] hover:shadow-[0_15px_40px_rgba(150,123,182,0.08)] transition-all duration-300 border-l-4 border-tertiary-container group">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-background mb-4">Valores</h3>
+<ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary/60"></span> Empatia e Acolhimento</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary/60"></span> Excelência Profissional</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary/60"></span> Ética e Transparência</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary/60"></span> Abordagem Holística</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Environment Gallery (Bento Grid) -->
+<section class="px-4 md:px-xl py-lg max-w-container-max mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-md text-headline-md text-on-background mb-4">Nosso Espaço</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    Um ambiente cuidadosamente projetado para refletir nossa filosofia de Guided Serenity, oferecendo conforto e tranquilidade.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-sm md:gap-gutter auto-rows-[200px] md:auto-rows-[300px]">
+<div class="col-span-2 row-span-1 md:row-span-2 rounded-xl overflow-hidden relative group">
+<img alt="Fachada iluminada e recepção principal de uma clínica moderna. O design apresenta linhas limpas, madeira clara e detalhes sutis em lavanda. A iluminação é suave e convidativa, criando uma sensação imediata de calma e profissionalismo sofisticado." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Fachada iluminada e recepção principal de uma clínica moderna. O design apresenta linhas limpas, madeira clara e detalhes sutis em lavanda. A iluminação é suave e convidativa, criando uma sensação imediata de calma e profissionalismo sofisticado." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3EnrgJX5LIRg4QhuedYsmtw5WWTpOH3VDOLsuRmD4LRpVeXqMpF5gagHhJJJByNIg6h2oJgpmXEZAGdAuY7NhMVC6wsrwTPhB19r_P4xYFyrW6HbkWimJEMRaWCHM7EF0my-zRXQDpqEjfpCMQIafYasGSCZerNcPwXfY44CcMX6__u9oyRQ-haqbdTpjeCSgc6qdOeoZevrZ4S30KNHhPWXszEG_7sxKGZFG9Z32Il2ERix457YAOhcECY_-NQP6LyWmNuKhkGdO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-background font-title-lg text-title-lg">Recepção Acolhedora</span>
+</div>
+</div>
+<div class="col-span-1 row-span-1 rounded-xl overflow-hidden relative group">
+<img alt="Sala de atendimento clínico individual. Decoração minimalista com foco em conforto. Uma poltrona ergonômica cor neutra domina o espaço, com luz indireta e toques sutis de dourado e lavanda na decoração, sugerindo um ambiente seguro para terapia." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sala de atendimento clínico individual. Decoração minimalista com foco em conforto. Uma poltrona ergonômica cor neutra domina o espaço, com luz indireta e toques sutis de dourado e lavanda na decoração, sugerindo um ambiente seguro para terapia." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWqFXKWrb1PhmU0NFHgNUfVMII0o6XNJJwpnUlWburNsHm7xY_8gs9MU4JdHDM9DwnmpfxDY48Ijh2CM3VWFrFNYXrn4MpISIe1sY26CU3Pp6I4qMpr91oCyCLJNCcG2mPvkMWo2IuJr77x6WNn5Jwv9PiOHQVW8Wp9miYcVqh17RxEI-QA9IGQ40pAAxcRSekGOw9yezMVhOmFVSEB8qHKAkN6hdrQmPhmQQ2DqHSFwkkDRlPWUYf34kK58GUeRSqEwp-0bsCQgnB"/>
+</div>
+<div class="col-span-1 row-span-1 rounded-xl overflow-hidden relative group">
+<img alt="Detalhe de um arranjo de plantas e elementos decorativos suaves em uma mesa lateral na clínica. Foco no estilo organic professionalism, com texturas naturais, cerâmica branca e uma atmosfera de serenidade zen." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Detalhe de um arranjo de plantas e elementos decorativos suaves em uma mesa lateral na clínica. Foco no estilo organic professionalism, com texturas naturais, cerâmica branca e uma atmosfera de serenidade zen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXxFvYtZHBfnuc1nTMVGZ2IQXfHD6VolA-4Ze4W8vYXLYSU8HrNtOWkKyyT-TyD_GbCy3VoQehT6pQM-m1ygzp7DIOCvbwkhd7YJpvQLnrYmgrQJLg_n48m1XxYNhZi16STW8L-RpKGa3YsIauvJ7r9C-zSI9L8pcXhHyKIc_s_hjNqumpjuASrJSZDTmAoFUpSKOo4kFFay8vFmkqff_NJ0ne2BLNkh0rRvYn7IaX1mSod1jGAcpTE14eueglxxmabK1QMeOtLCsb"/>
+</div>
+<div class="col-span-2 row-span-1 rounded-xl overflow-hidden relative group">
+<img alt="Corredor amplo e bem iluminado de uma clínica. As paredes são em tons de branco off-white, com portas de madeira clara. A iluminação embutida no teto e arandelas com luz quente criam um caminho calmo e acolhedor para os pacientes." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Corredor amplo e bem iluminado de uma clínica. As paredes são em tons de branco off-white, com portas de madeira clara. A iluminação embutida no teto e arandelas com luz quente criam um caminho calmo e acolhedor para os pacientes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4q_gnQoaRgLLfgaLR_JkyzybtPI_s4YJsJcdQ2xgmPPg7Q3iv_BZ4azwQv7rLHKaunqSij6lB8159P9ExSTJhwdoa5JutnyzqD4871XhpdeqpYf2smTciNS5mqFGF9HCsAFKHCoVNAqiJCMSvXrVZ1fV0jcPEFBc60qa8Q-GRo23FtOk6rtOnIVu6lTVVX7KD_78-V8LBvFtYlwr0UZLRKDSWJ8gE5sJYuYrVtCzl995OwLZsI90qHs25io-XPldUrQM9sBayTwAw"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-4 md:px-xl py-xl max-w-container-max mx-auto text-center mt-lg mb-xl">
+<div class="bg-primary/5 rounded-3xl p-12 md:p-16 border border-primary/10 shadow-[0_10px_40px_rgba(150,123,182,0.05)] relative overflow-hidden">
+<!-- Abstract decorative blur -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-fixed/40 rounded-full blur-[60px] pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-tertiary-fixed/20 rounded-full blur-[60px] pointer-events-none"></div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-4 relative z-10">Pronto para iniciar sua jornada?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-8 relative z-10">
+                    Nossa equipe está preparada para acolher você e esclarecer todas as suas dúvidas. Agende seu horário de forma rápida e segura.
+                </p>
+<button class="relative z-10 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-surface-tint hover:from-surface-tint hover:to-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md transition-all duration-500 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
+<span class="material-symbols-outlined fill text-[24px]">chat</span>
+                    Falar no WhatsApp
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/10 py-lg">
+<div class="w-full px-8 md:px-xl max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-md">
+<div class="flex flex-col gap-4">
+<span class="font-title-lg text-title-lg font-bold text-primary dark:text-primary-fixed-dim">
+                    Qualité
+                </span>
+<p class="font-caption text-caption text-on-surface-variant max-w-xs">
+                    © 2024 Qualité Clínica Integrada. Todos os direitos reservados. Igarapava-SP.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-6 md:gap-12">
+<nav class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Horários de Atendimento</a>
+</nav>
+</div>
+</div>
+</footer>
+<!-- Optional JS for Nav Scroll Effect -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav = document.getElementById('global-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    nav.classList.add('shadow-md', 'shadow-primary/10');
+                    nav.classList.remove('shadow-sm', 'shadow-primary/5');
+                } else {
+                    nav.classList.remove('shadow-md', 'shadow-primary/10');
+                    nav.classList.add('shadow-sm', 'shadow-primary/5');
+                }
+            });
+        });
+    </script>
+</body></html>

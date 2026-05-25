@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossos Profissionais | Clínica Qualité Igarapava-SP</title>
+  <meta name="description" content="Conheça a equipe da Clínica Qualité em Igarapava-SP: psicólogas, nutricionista, massoterapeuta, médica e fonoaudióloga. Perfis completos com abordagem, formação e formas de contato." />
+  <link rel="canonical" href="https://clinicaqualite.com.br/profissionais.html" />
+  <meta property="og:title" content="Nossos Profissionais | Clínica Qualité Igarapava-SP" />
+  <meta property="og:description" content="Equipe multidisciplinar de psicólogas, nutricionista, massoterapeuta, médica e fonoaudióloga em Igarapava-SP." />
+  <meta property="og:url" content="https://clinicaqualite.com.br/profissionais.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#6a5188", "primary-container": "#8369a3", "on-primary": "#ffffff",
+            "primary-fixed": "#eedbff", "primary-fixed-dim": "#d8bafa",
+            "on-primary-fixed": "#260e43", "tertiary-container": "#cca72f",
+            "surface": "#f9f9fb", "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f3f5", "surface-container": "#edeef0",
+            "surface-variant": "#e2e2e4", "surface-tint": "#6c538b",
+            "on-surface": "#1a1c1d", "on-surface-variant": "#4a454e",
+            "background": "#f9f9fb", "on-background": "#1a1c1d",
+            "outline": "#7b757f", "outline-variant": "#ccc4cf",
+          },
+          fontFamily: { display: ["Quicksand","sans-serif"], body: ["Be Vietnam Pro","sans-serif"] },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .card-shadow { box-shadow: 0 10px 30px rgba(106,81,136,0.08); }
+    .btn-gradient { background: linear-gradient(135deg,#6a5188 0%,#8369a3 100%); }
+    .btn-gradient:hover { background: linear-gradient(135deg,#5a4178 0%,#6a5188 100%); }
+    .pro-card { transition: transform 0.2s, box-shadow 0.2s; }
+    .pro-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(106,81,136,0.14); }
+    .filter-btn.active { background-color: #6a5188; color: #ffffff; border-color: #6a5188; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+    <div class="max-w-[1200px] mx-auto flex justify-between items-center px-6 md:px-20 py-4">
+      <a href="index.html" aria-label="Clínica Qualité — página inicial">
+        <img src="logo_qualité_nav.svg" alt="Logo Clínica Qualité" class="h-10 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm">Home</a>
+        <a href="sobre.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm">Sobre</a>
+        <a href="profissionais.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 text-sm">Profissionais</a>
+      </nav>
+      <a href="https://wa.me/5518999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+         target="_blank" rel="noopener"
+         class="hidden md:flex items-center gap-2 btn-gradient text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        Agendar WhatsApp
+      </a>
+      <button id="menu-btn" class="md:hidden text-primary">
+        <span class="material-symbols-outlined text-[28px]">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-on-surface-variant font-medium text-sm">Home</a>
+      <a href="sobre.html" class="text-on-surface-variant font-medium text-sm">Sobre</a>
+      <a href="profissionais.html" class="text-primary font-semibold text-sm">Profissionais</a>
+      <a href="https://wa.me/5518999999999" target="_blank" rel="noopener"
+         class="btn-gradient text-white px-5 py-3 rounded-full text-sm font-semibold text-center">Agendar WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-[72px]">
+    <section class="px-6 md:px-20 py-16 max-w-[1200px] mx-auto">
+
+      <!-- PAGE HEADER -->
+      <div class="text-center mb-12 max-w-3xl mx-auto">
+        <h1 class="font-display font-bold text-4xl md:text-5xl text-primary mb-4">Nossos Profissionais</h1>
+        <p class="text-on-surface-variant text-lg leading-relaxed">Conheça a equipe de especialistas dedicados a guiar sua jornada de bem-estar com excelência e acolhimento.</p>
+      </div>
+
+      <!-- SEARCH & FILTERS -->
+      <div class="mb-10 flex flex-col md:flex-row gap-4 items-center justify-between bg-surface-container-lowest p-4 rounded-[1.5rem] card-shadow">
+        <div class="relative w-full md:w-80">
+          <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+          <input id="search-input" type="text" placeholder="Buscar por nome ou especialidade..."
+                 class="w-full pl-11 pr-4 py-3 bg-surface-container-low border border-transparent rounded-full text-sm text-on-surface focus:bg-white focus:border-primary focus:ring-0 transition-all outline-none placeholder-outline" />
+        </div>
+        <div class="flex flex-wrap gap-2 justify-center md:justify-end">
+          <button class="filter-btn active px-4 py-2 rounded-full border border-outline-variant text-sm font-medium transition-all" data-area="todos">Todos</button>
+          <button class="filter-btn px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full border border-outline-variant text-sm font-medium hover:bg-surface-variant transition-all" data-area="psicologia">Psicologia</button>
+          <button class="filter-btn px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full border border-outline-variant text-sm font-medium hover:bg-surface-variant transition-all" data-area="nutricao">Nutrição</button>
+          <button class="filter-btn px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full border border-outline-variant text-sm font-medium hover:bg-surface-variant transition-all" data-area="massoterapia">Massoterapia</button>
+          <button class="filter-btn px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full border border-outline-variant text-sm font-medium hover:bg-surface-variant transition-all" data-area="medicina">Medicina</button>
+          <button class="filter-btn px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full border border-outline-variant text-sm font-medium hover:bg-surface-variant transition-all" data-area="fonoaudiologia">Fonoaudiologia</button>
+        </div>
+      </div>
+
+      <!-- PROFESSIONALS GRID -->
+      <div id="professionals-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Gustavo Avilla -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="gustavo avilla psicólogo psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Gustavo Avilla.jpeg" alt="Gustavo Avilla, Psicólogo em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicólogo</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Gustavo Avilla</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-gustavo.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- C. Silvanessa Maciel -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="silvanessa maciel psicóloga psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/C.Silvanessa Maciel.jpg" alt="C. Silvanessa Maciel, Psicóloga em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicóloga</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">C. Silvanessa Maciel</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-silvanessa.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Igor Boarati -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="igor boarati psicólogo psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Igor Boarati.jpg" alt="Igor Boarati, Psicólogo em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicólogo</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Igor Boarati</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-igor.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Talita Santos -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="talita santos psicóloga psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Talita Santos.jpg" alt="Talita Santos, Psicóloga em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicóloga</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Talita Santos</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-talita.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Yudi Carrer -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="yudi carrer psicólogo psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/yudi carrer.jpg" alt="Yudi Carrer, Psicólogo em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicólogo</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Yudi Carrer</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-yudi.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Camila Calheiros -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="fonoaudiologia" data-name="camila calheiros fonoaudióloga fonoaudiologia voz fala linguagem">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Camila Calheiros.jpg" alt="Camila Calheiros, Fonoaudióloga em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Fonoaudióloga</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Camila Calheiros</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Especialista em voz, linguagem e deglutição. Atendimento humanizado para crianças e adultos.</p>
+          <a href="profissional-camila-calheiros.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Khaula Yasin -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="nutricao" data-name="khaula yasin nutricionista nutrição">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-container rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Khaula Yasin.jpg" alt="Khaula Yasin, Nutricionista em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Nutricionista</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Khaula Yasin</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Nutrição integrativa com planos alimentares personalizados para saúde e qualidade de vida.</p>
+          <a href="profissional-khaula.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Larissa B. E. Santana -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="medicina" data-name="larissa santana médica medicina clínica geral">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-container rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Larissa B. E. Santana.jpg" alt="Larissa B. E. Santana, Médica em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Médica</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Larissa B. E. Santana</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Clínica Geral com visão integrativa. Une diagnóstico preciso ao cuidado humano e individual.</p>
+          <a href="profissional-larissa-santana.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Gabriela Balm -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="massoterapia" data-name="gabriela balm massoterapeuta massoterapia relaxamento corpo">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Gabriela Balm.jpg" alt="Gabriela Balm, Massoterapeuta em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Massoterapeuta</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Gabriela Balm</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Técnicas terapêuticas para alívio de tensão, dor muscular e equilíbrio corpo-mente.</p>
+          <a href="profissional-gabriela-balm.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Gabriela Barros -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="gabriela barros psicóloga psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Gabriela Barros.jpeg" alt="Gabriela Barros, Psicóloga em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicóloga</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Gabriela Barros</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-gabriela-barros.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Leonardo Bonome -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="leonardo bonome psicólogo psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Leonardo Bonome.jpg" alt="Leonardo Bonome, Psicólogo em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicólogo</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Leonardo Bonome</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-leonardo.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Ana Julia Peres Requi -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="ana julia peres requi psicóloga psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Ana Julia Peres Requi.jpg" alt="Ana Julia Peres Requi, Psicóloga em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicóloga</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Ana Julia Peres Requi</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-ana-julia.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+        <!-- Maria Julia Oliveira Pimenta -->
+        <article class="pro-card bg-surface-container-lowest rounded-[1.5rem] p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden" data-area="psicologia" data-name="maria julia oliveira pimenta psicóloga psicologia">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed-dim rounded-l-[1.5rem]"></div>
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface ring-2 ring-primary-fixed">
+            <img src="profissionais/Maria Julia Oliveira Pimenta.jpeg" alt="Maria Julia Oliveira Pimenta, Psicóloga em Igarapava-SP" class="w-full h-full object-cover" />
+          </div>
+          <span class="bg-primary-fixed text-primary text-xs font-semibold px-3 py-1 rounded-full mb-2">Psicóloga</span>
+          <h2 class="font-display font-semibold text-on-background text-lg mb-1">Maria Julia Oliveira Pimenta</h2>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-5 flex-grow">Atendimento psicológico com escuta ativa e abordagem humanizada para promover bem-estar e autoconhecimento.</p>
+          <a href="profissional-maria-julia.html" class="w-full py-3 bg-surface-container-low text-primary text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition-colors duration-300">Ver perfil completo</a>
+        </article>
+
+      </div><!-- end grid -->
+
+      <!-- No results msg -->
+      <div id="no-results" class="hidden text-center py-16">
+        <span class="material-symbols-outlined text-primary-fixed-dim text-[48px]">search_off</span>
+        <p class="text-on-surface-variant mt-3">Nenhum profissional encontrado.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/10 py-12">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-start gap-8">
+      <div>
+        <img src="logo_qualité_nav.svg" alt="Clínica Qualité" class="h-8 w-auto mb-3" />
+        <p class="text-on-surface-variant text-xs max-w-xs">Cuidado integrado para sua saúde emocional e física em Igarapava-SP.</p>
+        <p class="text-on-surface-variant text-xs mt-3">© 2025 Clínica Qualité. Todos os direitos reservados.</p>
+      </div>
+      <div class="flex flex-col md:flex-row gap-10">
+        <nav>
+          <p class="font-semibold text-on-background text-sm mb-3">Navegação</p>
+          <div class="flex flex-col gap-2">
+            <a href="index.html" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Home</a>
+            <a href="sobre.html" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Sobre a Clínica</a>
+            <a href="profissionais.html" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Profissionais</a>
+          </div>
+        </nav>
+        <nav>
+          <p class="font-semibold text-on-background text-sm mb-3">Contato</p>
+          <div class="flex flex-col gap-2">
+            <a href="https://wa.me/5518999999999" target="_blank" rel="noopener" class="text-on-surface-variant text-sm hover:text-primary transition-colors">WhatsApp</a>
+            <a href="https://www.instagram.com/clinicaqualite" target="_blank" rel="noopener" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Instagram</a>
+            <span class="text-on-surface-variant text-sm">Igarapava-SP</span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('shadow-md', window.scrollY > 20);
+    });
+
+    // Filter logic
+    const cards = document.querySelectorAll('#professionals-grid article');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('search-input');
+    const noResults = document.getElementById('no-results');
+
+    function applyFilters() {
+      const activeArea = document.querySelector('.filter-btn.active')?.dataset.area || 'todos';
+      const query = searchInput.value.toLowerCase().trim();
+      let visible = 0;
+      cards.forEach(card => {
+        const areaMatch = activeArea === 'todos' || card.dataset.area === activeArea;
+        const nameMatch = !query || card.dataset.name.includes(query);
+        const show = areaMatch && nameMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      noResults.classList.toggle('hidden', visible > 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+      });
+    });
+    searchInput.addEventListener('input', applyFilters);
+
+    // Pre-select from URL param
+    const urlArea = new URLSearchParams(location.search).get('area');
+    if (urlArea) {
+      const btn = document.querySelector(`.filter-btn[data-area="${urlArea}"]`);
+      if (btn) { document.querySelector('.filter-btn.active').classList.remove('active'); btn.classList.add('active'); applyFilters(); }
+    }
+  </script>
+</body>
+</html>

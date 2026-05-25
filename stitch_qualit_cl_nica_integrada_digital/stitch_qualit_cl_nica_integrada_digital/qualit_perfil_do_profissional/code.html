@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfil Profissional - Qualité Clínica Integrada</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#5f567e",
+                      "surface-container": "#edeef0",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#eedbff",
+                      "background": "#f9f9fb",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1d",
+                      "surface": "#f9f9fb",
+                      "on-surface-variant": "#4a454e",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "primary-fixed-dim": "#d8bafa",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed": "#241a00",
+                      "secondary-fixed-dim": "#ccc0ee",
+                      "on-surface": "#1a1c1d",
+                      "surface-container-low": "#f3f3f5",
+                      "secondary-container": "#dacefd",
+                      "tertiary-fixed": "#ffe088",
+                      "surface-variant": "#e2e2e4",
+                      "on-secondary-fixed": "#1e1539",
+                      "surface-container-high": "#e8e8ea",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#d9dadc",
+                      "secondary-fixed": "#e7deff",
+                      "on-secondary-fixed-variant": "#4a4168",
+                      "secondary": "#625981",
+                      "on-tertiary-container": "#4e3d00",
+                      "inverse-primary": "#d8bafa",
+                      "outline": "#7b757f",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#fffbff",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "on-primary-fixed": "#260e43",
+                      "primary-container": "#8369a3",
+                      "surface-container-highest": "#e2e2e4",
+                      "tertiary-container": "#cca72f",
+                      "on-primary-fixed-variant": "#543b71",
+                      "primary": "#6a5188",
+                      "surface-bright": "#f9f9fb",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#6c538b",
+                      "inverse-on-surface": "#f0f0f2",
+                      "tertiary": "#735c00",
+                      "outline-variant": "#ccc4cf",
+                      "inverse-surface": "#2f3132"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "base": "8px",
+                      "md": "24px",
+                      "sm": "12px",
+                      "xl": "80px",
+                      "lg": "48px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "display-lg": [
+                              "Quicksand"
+                      ],
+                      "display-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-sm": [
+                              "Quicksand"
+                      ],
+                      "title-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "caption": [
+                              "Be Vietnam Pro"
+                      ],
+                      "label-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-md": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .ambient-shadow {
+            box-shadow: 0px 10px 30px rgba(150, 123, 182, 0.08);
+        }
+        body {
+            background-color: #f9f9fb;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased pt-[80px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 md:px-xl py-4 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm shadow-primary/5 z-50">
+<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim tracking-tight" href="#">Qualité</a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">Sobre</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-bold scale-95 active:scale-90 transition-transform" href="#">Profissionais</a>
+</div>
+<button class="hidden md:flex items-center gap-2 bg-gradient-to-r from-primary/90 to-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:shadow-lg transition-all ambient-shadow">
+<span>Agendar WhatsApp</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_month">calendar_month</span>
+</button>
+<!-- Mobile Menu Button (simplified for brevity) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<main class="flex-grow max-w-container-max mx-auto w-full px-4 md:px-gutter lg:px-xl py-lg space-y-xl">
+<!-- Hero Profile Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 flex justify-center md:justify-start">
+<div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden ambient-shadow border-4 border-surface-container-lowest">
+<img alt="Dr. Mariana Silva" class="w-full h-full object-cover" data-alt="A highly professional portrait of a female therapist in a modern, light-filled clinical setting. She wears a soft, warm expression, dressed in a subtle lavender or beige blouse, embodying a sense of guided serenity and approachable professionalism. The background is a soft-focus, minimalist room with organic textures and gentle daylight, matching a soft minimalism aesthetic. High quality, warm, inviting, safe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG5_CpM1zjfrFaa3hWYYCqxzZsw4Cp56nXgQKhiDKzwtVK8DGa-t2XikQlZ_-jEZ4oN2LScnRx4xznePKSfLHT0AG8zakemSrdzMM4Jk8AZBhuZBqUQ64W-K9UcrUopkjm08l0VXtIOVkoD1wO5zCa9xs8Xm7ygL1818DBVhGpktYNTzGuLq6G5PrwsxNm2tnvgkH278a4elVx-RrS46_kFxUWGPg0dCF-xO5yhAcu1gHienCnqwmK6Sax27bP3LIhUAZNTVUms00C"/>
+</div>
+</div>
+<div class="md:col-span-7 space-y-md text-center md:text-left">
+<div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background">Dra. Mariana Silva</h1>
+<p class="font-headline-sm text-headline-sm text-primary mt-2">Psicóloga Clínica - CRP 06/123456</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto md:mx-0">
+                    Especialista em criar um espaço seguro para o autoconhecimento e desenvolvimento emocional, utilizando a abordagem Cognitivo-Comportamental para promover bem-estar duradouro.
+                </p>
+<div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white font-label-md text-label-md px-8 py-4 rounded-full hover:shadow-lg transition-all ambient-shadow scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+                        Agendar via WhatsApp
+                    </a>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout for Details -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- About & Approach (Spans 2 columns) -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-DEFAULT p-md md:p-lg ambient-shadow">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="psychology">psychology</span>
+<h2 class="font-headline-md text-headline-md text-on-background">Minha Abordagem</h2>
+</div>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>
+                        Acredito profundamente que a terapia é uma jornada colaborativa. Meu papel não é entregar respostas prontas, mas iluminar caminhos e fornecer ferramentas para que você possa lidar com seus desafios de forma mais saudável e autônoma.
+                    </p>
+<p>
+                        Em um ambiente acolhedor e livre de julgamentos, trabalho principalmente com a Terapia Cognitivo-Comportamental (TCC), uma abordagem baseada em evidências que nos ajuda a entender como nossos pensamentos, sentimentos e comportamentos estão interligados.
+                    </p>
+</div>
+<!-- Specialties Tags -->
+<div class="mt-8 pt-6 border-t border-outline-variant/10">
+<h3 class="font-title-lg text-title-lg text-on-background mb-4">Especialidades</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-primary-fixed text-primary font-label-md text-label-md px-4 py-2 rounded-full">Ansiedade</span>
+<span class="bg-primary-fixed text-primary font-label-md text-label-md px-4 py-2 rounded-full">Terapia Infantil</span>
+<span class="bg-primary-fixed text-primary font-label-md text-label-md px-4 py-2 rounded-full">Autoestima</span>
+<span class="bg-primary-fixed text-primary font-label-md text-label-md px-4 py-2 rounded-full">Relacionamentos</span>
+</div>
+</div>
+</div>
+<!-- Education & Info Sidebar -->
+<div class="space-y-gutter">
+<!-- Service Info Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-md ambient-shadow border-l-4 border-tertiary-container">
+<h3 class="font-title-lg text-title-lg text-on-background mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
+                        Informações
+                    </h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-1" data-icon="desktop_mac">desktop_mac</span>
+<div>
+<strong class="block text-on-background">Modalidades</strong>
+                                Presencial (Igarapava) e Online
+                            </div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-1" data-icon="schedule">schedule</span>
+<div>
+<strong class="block text-on-background">Horários</strong>
+                                Seg a Sex: 08h às 19h
+                            </div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-1" data-icon="health_and_safety">health_and_safety</span>
+<div>
+<strong class="block text-on-background">Atendimento</strong>
+                                Particular e Reembolso
+                            </div>
+</li>
+</ul>
+</div>
+<!-- Education Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-md ambient-shadow">
+<h3 class="font-title-lg text-title-lg text-on-background mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+                        Formação
+                    </h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="pb-3 border-b border-outline-variant/10 last:border-0 last:pb-0">
+<strong class="block text-on-background">Graduação em Psicologia</strong>
+                            Universidade Estadual Paulista (UNESP)
+                        </li>
+<li class="pb-3 border-b border-outline-variant/10 last:border-0 last:pb-0">
+<strong class="block text-on-background">Especialização em TCC</strong>
+                            Instituto de Terapia Cognitiva
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="bg-primary-fixed rounded-xl p-lg md:p-xl text-center ambient-shadow my-xl">
+<h2 class="font-headline-md text-headline-md text-on-primary-fixed mb-4">Pronto para dar o primeiro passo?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant mb-8 max-w-2xl mx-auto">
+                Agende sua primeira sessão ou tire dúvidas diretamente pelo WhatsApp. Estou aqui para ajudar na sua jornada de autodescoberta.
+            </p>
+<a class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-md text-label-md px-10 py-5 rounded-full hover:shadow-lg transition-all ambient-shadow scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+                Agendar consulta pelo WhatsApp
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-8 md:px-xl max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-md bg-surface-container-lowest dark:bg-surface-dim full-width py-lg border-t border-outline-variant/10 mt-auto">
+<div>
+<div class="font-title-lg text-title-lg font-bold text-primary dark:text-primary-fixed-dim mb-2">Qualité</div>
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Qualité Clínica Integrada. Todos os direitos reservados. Igarapava-SP.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contato</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Horários de Atendimento</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profissionais - Qualité Clínica Integrada</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#5f567e",
+                        "surface-container": "#edeef0",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#eedbff",
+                        "background": "#f9f9fb",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1d",
+                        "surface": "#f9f9fb",
+                        "on-surface-variant": "#4a454e",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "primary-fixed-dim": "#d8bafa",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#241a00",
+                        "secondary-fixed-dim": "#ccc0ee",
+                        "on-surface": "#1a1c1d",
+                        "surface-container-low": "#f3f3f5",
+                        "secondary-container": "#dacefd",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-variant": "#e2e2e4",
+                        "on-secondary-fixed": "#1e1539",
+                        "surface-container-high": "#e8e8ea",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d9dadc",
+                        "secondary-fixed": "#e7deff",
+                        "on-secondary-fixed-variant": "#4a4168",
+                        "secondary": "#625981",
+                        "on-tertiary-container": "#4e3d00",
+                        "inverse-primary": "#d8bafa",
+                        "outline": "#7b757f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-primary-fixed": "#260e43",
+                        "primary-container": "#8369a3",
+                        "surface-container-highest": "#e2e2e4",
+                        "tertiary-container": "#cca72f",
+                        "on-primary-fixed-variant": "#543b71",
+                        "primary": "#6a5188",
+                        "surface-bright": "#f9f9fb",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#6c538b",
+                        "inverse-on-surface": "#f0f0f2",
+                        "tertiary": "#735c00",
+                        "outline-variant": "#ccc4cf",
+                        "inverse-surface": "#2f3132"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "base": "8px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Quicksand"],
+                        "display-lg-mobile": ["Quicksand"],
+                        "headline-sm": ["Quicksand"],
+                        "title-lg": ["Be Vietnam Pro"],
+                        "caption": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Soft minimalism ambient shadows */
+        .card-shadow {
+            box-shadow: 0px 10px 30px rgba(150, 123, 182, 0.08);
+        }
+        
+        /* Lavender-to-Lilac gradient for primary buttons */
+        .btn-gradient {
+            background: linear-gradient(135deg, #6a5188 0%, #8369a3 100%);
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(135deg, #5f567e 0%, #6a5188 100%);
+        }
+
+        /* Ambient background glow */
+        .ambient-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(216, 186, 250, 0.15) 0%, rgba(249, 249, 251, 0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm shadow-primary/5">
+<div class="flex justify-between items-center px-8 md:px-xl py-4 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight scale-95 active:scale-90 transition-transform" href="#">
+                Qualité
+            </a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex gap-md items-center">
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Sobre</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 font-bold hover:text-primary transition-colors duration-300" href="#">Profissionais</a>
+</nav>
+<!-- Trailing Action -->
+<a class="hidden md:flex items-center gap-2 btn-gradient text-white px-6 py-3 rounded-full font-label-md text-label-md shadow-md hover:shadow-lg transition-all scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                Agendar WhatsApp
+            </a>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow relative overflow-hidden">
+<!-- Ambient Decor -->
+<div class="ambient-glow top-[-100px] right-[-100px]"></div>
+<div class="ambient-glow bottom-[20%] left-[-200px]"></div>
+<section class="w-full px-4 md:px-xl max-w-container-max mx-auto py-lg md:py-xl">
+<!-- Page Header -->
+<div class="text-center mb-lg md:mb-xl max-w-3xl mx-auto">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-sm">Nossos Profissionais</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Conheça a equipe de especialistas dedicados a guiar sua jornada de bem-estar com excelência e acolhimento.</p>
+</div>
+<!-- Search & Filters -->
+<div class="mb-lg flex flex-col md:flex-row gap-4 items-center justify-between bg-surface-container-lowest p-4 rounded-xl card-shadow">
+<!-- Search Bar -->
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-[#F1F1F5] border border-transparent rounded-[16px] font-body-md text-body-md text-on-surface focus:bg-white focus:border-primary focus:ring-0 transition-all outline-none placeholder-outline" placeholder="Buscar por nome..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex flex-wrap gap-2 w-full md:w-auto justify-center md:justify-end">
+<button class="px-4 py-2 bg-primary-fixed text-on-primary-fixed font-label-md text-label-md rounded-full border border-primary-fixed hover:bg-primary-fixed-dim transition-colors">Todos</button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant hover:bg-surface-variant transition-colors">Psicologia</button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant hover:bg-surface-variant transition-colors">Fisioterapia</button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant hover:bg-surface-variant transition-colors">Nutrição</button>
+</div>
+</div>
+<!-- Professionals Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-DEFAULT p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-[#dacefd] rounded-l-DEFAULT"></div>
+<div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface-bright shadow-sm relative">
+<img alt="Dr. Ana Souza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional headshot of a female doctor with warm, welcoming expression. Soft, minimalist lighting, high-key white background, evoking a serene and modern wellness sanctuary aesthetic. Gentle lavender tones subtly reflected." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD09H8GqUiFMaf3GN0bqJ7dQmlP9-b8IBGgsOVa8qcN-rXuJ0xfG0vwkboveAOFaxhS2x6cKR92prJVvYy6JCjgBYFdS2wHhxzj0usCDdIdEBCkLQincknBiRnuSKqdsglsLMOXH69tQEOponCUbVPLWvQkQAogQQ2vGXwDtigbiVkHXC7pvdWzD3KNBeNS4rPDs7c9do4bA0zx32C-gZehZfYyQDEIQL2gaUq05upymKsjV-v13xP1-abZ8u_UgOx3BhM-8dt3ujuf"/>
+</div>
+<span class="bg-primary-fixed text-primary font-caption text-caption px-3 py-1 rounded-full mb-2">Psicóloga Clínica</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Dra. Ana Souza</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow line-clamp-3">Especialista em Terapia Cognitivo-Comportamental. Abordagem empática focada no desenvolvimento pessoal e superação de ansiedade e depressão.</p>
+<button class="w-full py-3 bg-surface-container-low text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-white transition-colors duration-300">
+                        Ver perfil
+                    </button>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-DEFAULT p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-[#cca72f] rounded-l-DEFAULT"></div> <!-- Featured accent -->
+<div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface-bright shadow-sm relative">
+<img alt="Dr. Carlos Mendes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional portrait of a male physical therapist in a clean, modern clinical setting. Soft, natural lighting, minimalistic background with a hint of warm organic elements. Emotional tone of safety and expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOzdFI3xSqUknr6WoSNN_w0QwiDymLEUF6TbibqDLWOoStNE41GKSPgxaI1WPEu5SMc7mYpu_-Mz0zdZnIQg64Hc9X11Jxz-SR3VWELJav7x6X6r11oTBNtxDI_HMfhzvFOyl93pqtNeDtoCTbJtInqBkIUPa6SIWaa2Q4Tx3Z23BaGMx9zeJejI-68Zv345o8TKQ8pCRJGAFKahrBdAEQLTKkJW8IUvVnOUCCsQ_luzDDgjfUpeRFr8kxgoMvvYWOsLwEV7kV4rvS"/>
+</div>
+<span class="bg-primary-fixed text-primary font-caption text-caption px-3 py-1 rounded-full mb-2">Fisioterapeuta</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Dr. Carlos Mendes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow line-clamp-3">Foco em reabilitação ortopédica e postural. Utiliza técnicas modernas para alívio rápido da dor e recuperação funcional completa do paciente.</p>
+<button class="w-full py-3 bg-surface-container-low text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-white transition-colors duration-300">
+                        Ver perfil
+                    </button>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-DEFAULT p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-[#dacefd] rounded-l-DEFAULT"></div>
+<div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface-bright shadow-sm relative">
+<img alt="Dra. Beatriz Lima" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A serene headshot of a female nutritionist smiling gently. Clean, soft-focus background with subtle light lavender and off-white tones. Minimalist and organic professionalism aesthetic, conveying approachable health guidance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9nuezBMvTPGAtwKI1C9XZiwTgmIdjvTWHfT-WjWS9qLP4fvctQ9Dd4wZbEMbtYT53D61D0dsERVg4UZQ0caERGEQi_mae-gF54s9_dtk1KfQYXqKof05Vrk4IeHZibnBMlt7BhfXSQNDGt8Kr3tR341gjp6RV4YUio250ybmuGr1ubyBnOn21NOde5yGZlps5daIH1MJBD1h8LbVrwZ3RA5PAwpMgfznimdONPiHz_64dZO1EA6P71MUxzjqv_F9BcBV9mO0WOKi5"/>
+</div>
+<span class="bg-primary-fixed text-primary font-caption text-caption px-3 py-1 rounded-full mb-2">Nutricionista Funcional</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Dra. Beatriz Lima</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow line-clamp-3">Nutrição integrativa com foco em saúde da mulher e emagrecimento saudável. Planos alimentares personalizados que respeitam a rotina de cada paciente.</p>
+<button class="w-full py-3 bg-surface-container-low text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-white transition-colors duration-300">
+                        Ver perfil
+                    </button>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-DEFAULT p-6 flex flex-col items-center text-center card-shadow relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-[#dacefd] rounded-l-DEFAULT"></div>
+<div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-surface-bright shadow-sm relative">
+<img alt="Dr. Roberto Dias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional photograph of a mature male doctor looking thoughtful and calm. Soft white and off-white background with a gentle ambient shadow. High-end, soft minimalism style suitable for a modern wellness center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRFIiu5ar6SJJJ_gK1p6TQpUeHqISrnNpQK5Iygtd4Pl2rh8TAeKG5Nv5ZRYYkWVE_LVd3EPKivjlmcp-jzJw-oJvxnzoRvtN-2sqL40JAmmz3JqMMIzgEWLMYb64T7og33mdQCDGNZfJQNI7L6WgOtpDLfSVM0d74LXm8haaB3uo5HoIqmUhj3wp3lPmDbI5W9_83AtUbY0KglKlmvTPjwZeo5fcWFfSUtPh-KdJZkw3HwJjXEMDbwBthFF9uRzC00G9bue3rfjB"/>
+</div>
+<span class="bg-primary-fixed text-primary font-caption text-caption px-3 py-1 rounded-full mb-2">Psiquiatra</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Dr. Roberto Dias</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow line-clamp-3">Atenção especializada em transtornos de humor e ansiedade. Tratamento humanizado buscando sempre a menor intervenção medicamentosa possível.</p>
+<button class="w-full py-3 bg-surface-container-low text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-white transition-colors duration-300">
+                        Ver perfil
+                    </button>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest py-lg border-t border-outline-variant/10 mt-auto">
+<div class="w-full px-8 md:px-xl max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-md">
+<!-- Brand Logo -->
+<div>
+<a class="font-title-lg text-title-lg font-bold text-primary opacity-80 hover:opacity-100 transition-opacity block mb-2" href="#">
+                    Qualité
+                </a>
+<p class="font-caption text-caption text-on-surface-variant max-w-xs">
+                    © 2024 Qualité Clínica Integrada. Todos os direitos reservados. Igarapava-SP.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Horários de Atendimento</a>
+</div>
+</div>
+</footer>
+</body></html>

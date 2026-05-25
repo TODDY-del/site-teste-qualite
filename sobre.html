@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre a Clínica | Clínica Qualité Igarapava-SP</title>
+  <meta name="description" content="Conheça a Clínica Qualité em Igarapava-SP. Nossa história, filosofia de cuidado, missão, visão e valores. Um espaço dedicado ao bem-estar integral com equipe multidisciplinar." />
+  <link rel="canonical" href="https://clinicaqualite.com.br/sobre.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sobre a Clínica Qualité | Igarapava-SP" />
+  <meta property="og:description" content="Nossa história, filosofia e valores. Conheça o espaço dedicado ao seu cuidado integral em Igarapava-SP." />
+  <meta property="og:url" content="https://clinicaqualite.com.br/sobre.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#6a5188", "primary-container": "#8369a3", "on-primary": "#ffffff",
+            "primary-fixed": "#eedbff", "primary-fixed-dim": "#d8bafa",
+            "on-primary-fixed": "#260e43", "on-primary-fixed-variant": "#543b71",
+            "secondary-container": "#dacefd", "tertiary-container": "#cca72f",
+            "tertiary-fixed": "#ffe088", "surface": "#f9f9fb",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f3f3f5",
+            "surface-container": "#edeef0", "surface-variant": "#e2e2e4",
+            "surface-tint": "#6c538b", "on-surface": "#1a1c1d",
+            "on-surface-variant": "#4a454e", "background": "#f9f9fb",
+            "on-background": "#1a1c1d", "outline": "#7b757f", "outline-variant": "#ccc4cf",
+          },
+          fontFamily: { display: ["Quicksand","sans-serif"], body: ["Be Vietnam Pro","sans-serif"] },
+          borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .card-shadow { box-shadow: 0 10px 30px rgba(106,81,136,0.08); }
+    .btn-gradient { background: linear-gradient(135deg,#6a5188 0%,#8369a3 100%); }
+    .btn-gradient:hover { background: linear-gradient(135deg,#5a4178 0%,#6a5188 100%); }
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Clínica Qualité",
+    "description": "Clínica multidisciplinar em Igarapava-SP com psicólogas, nutricionista, massoterapeuta, médica e fonoaudióloga.",
+    "url": "https://clinicaqualite.com.br",
+    "telephone": "+55-18-99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Flores, 100",
+      "addressLocality": "Igarapava",
+      "addressRegion": "SP",
+      "postalCode": "14960-000",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+    <div class="max-w-[1200px] mx-auto flex justify-between items-center px-6 md:px-20 py-4">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Clínica Qualité — página inicial">
+        <img src="logo_qualité_nav.svg" alt="Logo Clínica Qualité" class="h-10 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Menu principal">
+        <a href="index.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm">Home</a>
+        <a href="sobre.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 text-sm">Sobre</a>
+        <a href="profissionais.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm">Profissionais</a>
+      </nav>
+      <a href="https://wa.me/5518999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+         target="_blank" rel="noopener"
+         class="hidden md:flex items-center gap-2 btn-gradient text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        Agendar WhatsApp
+      </a>
+      <button id="menu-btn" class="md:hidden text-primary" aria-label="Abrir menu">
+        <span class="material-symbols-outlined text-[28px]">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-outline-variant/10 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-on-surface-variant font-medium text-sm">Home</a>
+      <a href="sobre.html" class="text-primary font-semibold text-sm">Sobre</a>
+      <a href="profissionais.html" class="text-on-surface-variant font-medium text-sm">Profissionais</a>
+      <a href="https://wa.me/5518999999999" target="_blank" rel="noopener"
+         class="btn-gradient text-white px-5 py-3 rounded-full text-sm font-semibold text-center">Agendar WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-[72px]">
+
+    <!-- HERO BANNER -->
+    <section class="relative px-6 md:px-20 py-20 md:py-28 max-w-[1200px] mx-auto flex flex-col items-center text-center overflow-hidden">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary-fixed/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+      <h1 class="font-display font-bold text-4xl md:text-5xl text-on-background mb-5 max-w-3xl">Nossa História</h1>
+      <p class="text-on-surface-variant text-lg max-w-2xl mx-auto leading-relaxed">
+        Um espaço dedicado ao acolhimento e à excelência clínica, onde a sua jornada de saúde integral é guiada com serenidade e profissionalismo.
+      </p>
+    </section>
+
+    <!-- FILOSOFIA DE CUIDADO -->
+    <section class="px-6 md:px-20 py-12 max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-14 items-center">
+        <div class="md:col-span-5 relative group">
+          <div class="absolute inset-0 bg-secondary-container/40 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6 duration-500"></div>
+          <img src="imagens/Captura de tela 2026-05-24 183331.png"
+               alt="Fachada da Clínica Qualité em Igarapava-SP"
+               class="w-full rounded-[2rem] object-cover card-shadow" />
+        </div>
+        <div class="md:col-span-7 flex flex-col gap-7">
+          <div>
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-on-background mb-4">Filosofia de Cuidado</h2>
+            <div class="w-16 h-1 bg-tertiary-container rounded-full"></div>
+          </div>
+          <div class="text-on-surface-variant text-base leading-relaxed space-y-5">
+            <p>
+              A Clínica Qualité nasceu do desejo de transformar a experiência de cuidado à saúde em Igarapava. Acreditamos que o tratamento eficaz não se limita à mitigação de sintomas, mas exige um olhar profundo e empático para o indivíduo como um todo.
+            </p>
+            <p>
+              Nossa abordagem, pautada na "Serenidade Guiada", busca oferecer um refúgio seguro onde a excelência clínica encontra o conforto humano. Afastamo-nos do ambiente hospitalar frio e optamos por um espaço que promove relaxamento e clareza mental desde o primeiro contato.
+            </p>
+            <p>
+              Reunimos uma equipe multidisciplinar de especialistas dedicados, unidos pelo compromisso de oferecer um acompanhamento personalizado, ético e embasado nas práticas mais modernas da saúde integrativa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILARES -->
+    <section class="px-6 md:px-20 py-20 max-w-[1200px] mx-auto bg-surface-container-lowest rounded-[2rem] my-8 border border-outline-variant/20 card-shadow">
+      <div class="text-center mb-14">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-on-background mb-3">Nossos Pilares</h2>
+        <p class="text-on-surface-variant text-base max-w-2xl mx-auto">Os fundamentos que guiam cada interação, diagnóstico e plano de tratamento em nossa clínica.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-surface rounded-[1.5rem] p-8 card-shadow border-l-4 border-tertiary-container group hover:scale-[1.01] transition-transform">
+          <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-[24px]">explore</span>
+          </div>
+          <h3 class="font-display font-semibold text-on-background text-lg mb-3">Missão</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            Proporcionar um cuidado integrativo e humanizado, promovendo a saúde física e mental através de tratamentos de excelência em um ambiente acolhedor e seguro.
+          </p>
+        </div>
+        <div class="bg-surface rounded-[1.5rem] p-8 card-shadow border-l-4 border-tertiary-container group hover:scale-[1.01] transition-transform">
+          <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-[24px]">visibility</span>
+          </div>
+          <h3 class="font-display font-semibold text-on-background text-lg mb-3">Visão</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            Ser a clínica de referência em Igarapava e região para saúde integral, reconhecida pela inovação clínica, empatia profunda e resultados transformadores.
+          </p>
+        </div>
+        <div class="bg-surface rounded-[1.5rem] p-8 card-shadow border-l-4 border-tertiary-container group hover:scale-[1.01] transition-transform">
+          <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-[24px]">diamond</span>
+          </div>
+          <h3 class="font-display font-semibold text-on-background text-lg mb-3">Valores</h3>
+          <ul class="text-on-surface-variant text-sm leading-relaxed space-y-2">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary/60 shrink-0"></span>Empatia e Acolhimento</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary/60 shrink-0"></span>Excelência Profissional</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary/60 shrink-0"></span>Ética e Transparência</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary/60 shrink-0"></span>Abordagem Holística</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSO ESPAÇO -->
+    <section class="px-6 md:px-20 py-16 max-w-[1200px] mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-on-background mb-3">Nosso Espaço</h2>
+        <p class="text-on-surface-variant text-base max-w-2xl mx-auto">Um ambiente cuidadosamente projetado para refletir nossa filosofia de Serenidade Guiada.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[260px]">
+        <div class="col-span-2 row-span-1 md:row-span-2 rounded-[1.5rem] overflow-hidden card-shadow">
+          <img src="imagens/Captura de tela 2026-05-24 183628.png" alt="Consultório da Clínica Qualité em Igarapava-SP" class="w-full h-full object-cover" />
+        </div>
+        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
+          <img src="imagens/Captura de tela 2026-05-24 183528.png" alt="Sala de atendimento da Clínica Qualité" class="w-full h-full object-cover" />
+        </div>
+        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
+          <img src="imagens/Captura de tela 2026-05-24 183551.png" alt="Decoração interna da Clínica Qualité" class="w-full h-full object-cover" />
+        </div>
+        <div class="col-span-2 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
+          <img src="imagens/Captura de tela 2026-05-24 183650.png" alt="Sala de reunião da Clínica Qualité" class="w-full h-full object-cover" />
+        </div>
+        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
+          <img src="imagens/Captura de tela 2026-05-24 183730.png" alt="Mural artístico externo da Clínica Qualité" class="w-full h-full object-cover" />
+        </div>
+        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
+          <img src="imagens/Captura de tela 2026-05-24 183812.png" alt="Sala infantil da Clínica Qualité" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6 md:px-20 max-w-[1200px] mx-auto text-center mb-12">
+      <div class="bg-primary/5 rounded-[2rem] p-12 md:p-16 border border-primary/10 relative overflow-hidden card-shadow">
+        <div class="absolute -top-16 -right-16 w-48 h-48 bg-primary-fixed/40 rounded-full blur-[60px] pointer-events-none"></div>
+        <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-tertiary-fixed/20 rounded-full blur-[60px] pointer-events-none"></div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-on-background mb-4 relative z-10">Pronto para iniciar sua jornada?</h2>
+        <p class="text-on-surface-variant text-base max-w-xl mx-auto mb-8 relative z-10">
+          Nossa equipe está preparada para acolher você com escuta, cuidado e profissionalismo.
+        </p>
+        <a href="https://wa.me/5518999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+           target="_blank" rel="noopener"
+           class="relative z-10 inline-flex items-center gap-2 btn-gradient text-white px-9 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/10 py-12">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-start gap-8">
+      <div>
+        <img src="logo_qualité_nav.svg" alt="Clínica Qualité" class="h-8 w-auto mb-3" />
+        <p class="text-on-surface-variant text-xs max-w-xs leading-relaxed">Cuidado integrado para sua saúde emocional e física em Igarapava-SP.</p>
+        <p class="text-on-surface-variant text-xs mt-3">© 2025 Clínica Qualité. Todos os direitos reservados.</p>
+      </div>
+      <div class="flex flex-col md:flex-row gap-10">
+        <nav>
+          <p class="font-semibold text-on-background text-sm mb-3">Navegação</p>
+          <div class="flex flex-col gap-2">
+            <a href="index.html" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Home</a>
+            <a href="sobre.html" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Sobre a Clínica</a>
+            <a href="profissionais.html" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Profissionais</a>
+          </div>
+        </nav>
+        <nav>
+          <p class="font-semibold text-on-background text-sm mb-3">Contato</p>
+          <div class="flex flex-col gap-2">
+            <a href="https://wa.me/5518999999999" target="_blank" rel="noopener" class="text-on-surface-variant text-sm hover:text-primary transition-colors">WhatsApp</a>
+            <a href="https://www.instagram.com/clinicaqualite" target="_blank" rel="noopener" class="text-on-surface-variant text-sm hover:text-primary transition-colors">Instagram</a>
+            <span class="text-on-surface-variant text-sm">Igarapava-SP</span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('shadow-md', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
