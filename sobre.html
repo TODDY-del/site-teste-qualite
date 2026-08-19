@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -80,12 +80,7 @@
         <a href="sobre.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 text-sm">Sobre</a>
         <a href="profissionais.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors text-sm">Profissionais</a>
       </nav>
-      <a href="https://wa.me/5518999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
-         target="_blank" rel="noopener"
-         class="hidden md:flex items-center gap-2 btn-gradient text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all">
-        <span class="material-symbols-outlined text-[18px]">chat</span>
-        Agendar WhatsApp
-      </a>
+      <a href="profissionais.html" class="hidden md:flex items-center gap-2 btn-gradient text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all">Agendar Consulta</a>
       <button id="menu-btn" class="md:hidden text-primary" aria-label="Abrir menu">
         <span class="material-symbols-outlined text-[28px]">menu</span>
       </button>
@@ -94,8 +89,7 @@
       <a href="index.html" class="text-on-surface-variant font-medium text-sm">Home</a>
       <a href="sobre.html" class="text-primary font-semibold text-sm">Sobre</a>
       <a href="profissionais.html" class="text-on-surface-variant font-medium text-sm">Profissionais</a>
-      <a href="https://wa.me/5518999999999" target="_blank" rel="noopener"
-         class="btn-gradient text-white px-5 py-3 rounded-full text-sm font-semibold text-center">Agendar WhatsApp</a>
+      <a href="profissionais.html" class="btn-gradient text-white px-5 py-3 rounded-full text-sm font-semibold text-center">Agendar Consulta</a>
     </div>
   </header>
 
@@ -115,7 +109,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-14 items-center">
         <div class="md:col-span-5 relative group">
           <div class="absolute inset-0 bg-secondary-container/40 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6 duration-500"></div>
-          <img src="imagens/Captura de tela 2026-05-24 183331.png"
+          <img src="imagens/sobre.jpeg"
                alt="Fachada da Clínica Qualité em Igarapava-SP"
                class="w-full rounded-[2rem] object-cover card-shadow" />
         </div>
@@ -185,27 +179,94 @@
         <h2 class="font-display font-bold text-3xl md:text-4xl text-on-background mb-3">Nosso Espaço</h2>
         <p class="text-on-surface-variant text-base max-w-2xl mx-auto">Um ambiente cuidadosamente projetado para refletir nossa filosofia de Serenidade Guiada.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[260px]">
-        <div class="col-span-2 row-span-1 md:row-span-2 rounded-[1.5rem] overflow-hidden card-shadow">
-          <img src="imagens/Captura de tela 2026-05-24 183628.png" alt="Consultório da Clínica Qualité em Igarapava-SP" class="w-full h-full object-cover" />
-        </div>
-        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
-          <img src="imagens/Captura de tela 2026-05-24 183528.png" alt="Sala de atendimento da Clínica Qualité" class="w-full h-full object-cover" />
-        </div>
-        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
-          <img src="imagens/Captura de tela 2026-05-24 183551.png" alt="Decoração interna da Clínica Qualité" class="w-full h-full object-cover" />
-        </div>
-        <div class="col-span-2 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
-          <img src="imagens/Captura de tela 2026-05-24 183650.png" alt="Sala de reunião da Clínica Qualité" class="w-full h-full object-cover" />
-        </div>
-        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
-          <img src="imagens/Captura de tela 2026-05-24 183730.png" alt="Mural artístico externo da Clínica Qualité" class="w-full h-full object-cover" />
-        </div>
-        <div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden card-shadow">
-          <img src="imagens/Captura de tela 2026-05-24 183812.png" alt="Sala infantil da Clínica Qualité" class="w-full h-full object-cover" />
-        </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <button type="button" onclick="openLightbox(0)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.11.04 AM.jpeg" alt="Recepção da Clínica Qualité em Igarapava-SP" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(1)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.04.32 AM (1).jpeg" alt="Sala de espera da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(2)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.04.42 AM.jpeg" alt="Sala de espera da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(3)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.11.53 AM.jpeg" alt="Área comum da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(4)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.11.21 AM.jpeg" alt="Corredor decorado da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(5)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.05.25 AM.jpeg" alt="Consultório da Clínica Qualité em Igarapava-SP" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(6)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.06.16 AM.jpeg" alt="Sala de reunião da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(7)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.08.41 AM.jpeg" alt="Sala de massoterapia da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(8)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.09.20 AM.jpeg" alt="Sala de fisioterapia da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(9)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.10.16 AM.jpeg" alt="Sala infantil da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
+        <button type="button" onclick="openLightbox(10)" class="group relative aspect-square rounded-[1.5rem] overflow-hidden card-shadow cursor-zoom-in">
+          <img src="imagens/WhatsApp Image 2026-08-19 at 11.07.33 AM.jpeg" alt="Mural artístico externo da Clínica Qualité" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <span class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">zoom_in</span>
+          </span>
+        </button>
       </div>
     </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/90 items-center justify-center px-4">
+      <button type="button" onclick="closeLightbox()" aria-label="Fechar"
+              class="absolute top-5 right-5 md:top-8 md:right-8 text-white/80 hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[36px]">close</span>
+      </button>
+      <button type="button" onclick="showLightbox(-1)" aria-label="Imagem anterior"
+              class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-white/80 hover:text-white transition-colors bg-white/10 hover:bg-white/20">
+        <span class="material-symbols-outlined text-[28px] md:text-[32px]">chevron_left</span>
+      </button>
+      <button type="button" onclick="showLightbox(1)" aria-label="Próxima imagem"
+              class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-white/80 hover:text-white transition-colors bg-white/10 hover:bg-white/20">
+        <span class="material-symbols-outlined text-[28px] md:text-[32px]">chevron_right</span>
+      </button>
+      <figure class="max-w-5xl max-h-[85vh] flex flex-col items-center">
+        <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[85vh] rounded-[1rem] object-contain shadow-2xl" />
+      </figure>
+    </div>
 
     <!-- CTA -->
     <section class="py-20 px-6 md:px-20 max-w-[1200px] mx-auto text-center mb-12">
@@ -216,11 +277,10 @@
         <p class="text-on-surface-variant text-base max-w-xl mx-auto mb-8 relative z-10">
           Nossa equipe está preparada para acolher você com escuta, cuidado e profissionalismo.
         </p>
-        <a href="https://wa.me/5518999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
-           target="_blank" rel="noopener"
+        <a href="profissionais.html"
            class="relative z-10 inline-flex items-center gap-2 btn-gradient text-white px-9 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all">
-          <span class="material-symbols-outlined text-[20px]">chat</span>
-          Falar no WhatsApp
+          <span class="material-symbols-outlined text-[20px]">groups</span>
+          Ver Profissionais
         </a>
       </div>
     </section>
@@ -262,6 +322,55 @@
     });
     window.addEventListener('scroll', () => {
       document.getElementById('navbar').classList.toggle('shadow-md', window.scrollY > 20);
+    });
+
+    // Lightbox — Nosso Espaço
+    const galleryImages = [
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.11.04 AM.jpeg", alt: "Recepção da Clínica Qualité em Igarapava-SP" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.04.32 AM (1).jpeg", alt: "Sala de espera da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.04.42 AM.jpeg", alt: "Sala de espera da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.11.53 AM.jpeg", alt: "Área comum da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.11.21 AM.jpeg", alt: "Corredor decorado da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.05.25 AM.jpeg", alt: "Consultório da Clínica Qualité em Igarapava-SP" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.06.16 AM.jpeg", alt: "Sala de reunião da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.08.41 AM.jpeg", alt: "Sala de massoterapia da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.09.20 AM.jpeg", alt: "Sala de fisioterapia da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.10.16 AM.jpeg", alt: "Sala infantil da Clínica Qualité" },
+      { src: "imagens/WhatsApp Image 2026-08-19 at 11.07.33 AM.jpeg", alt: "Mural artístico externo da Clínica Qualité" },
+    ];
+    let lightboxIndex = 0;
+    const lightboxEl = document.getElementById('lightbox');
+    const lightboxImgEl = document.getElementById('lightbox-img');
+
+    function renderLightbox() {
+      const item = galleryImages[lightboxIndex];
+      lightboxImgEl.src = item.src;
+      lightboxImgEl.alt = item.alt;
+    }
+    function openLightbox(index) {
+      lightboxIndex = index;
+      renderLightbox();
+      lightboxEl.classList.remove('hidden');
+      lightboxEl.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightboxEl.classList.add('hidden');
+      lightboxEl.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    function showLightbox(direction) {
+      lightboxIndex = (lightboxIndex + direction + galleryImages.length) % galleryImages.length;
+      renderLightbox();
+    }
+    lightboxEl.addEventListener('click', (e) => {
+      if (e.target === lightboxEl) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (lightboxEl.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showLightbox(-1);
+      if (e.key === 'ArrowRight') showLightbox(1);
     });
   </script>
 </body>
